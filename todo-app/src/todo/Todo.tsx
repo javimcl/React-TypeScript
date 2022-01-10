@@ -1,15 +1,14 @@
 import React from 'react'
 import { TodoProvider } from './context/TodoProvider';
+import { TodoList } from './components/TodoList';
+import { Title } from './components/Title';
 
 export const Todo = () => {
     return (
         <TodoProvider>
-            <h2>Todo:</h2>
-            <ul>
-                <li>Todo 1</li>
-                <li>Todo 2</li>
-                <li>Todo 3</li>
-            </ul>
+          <Title/>
+            <TodoList/>
+           
         </TodoProvider>
     )
 }
